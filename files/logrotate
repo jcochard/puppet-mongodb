@@ -1,0 +1,13 @@
+/var/log/mongodb/mongodb.log {
+    daily
+    rotate 7
+    compress
+    missingok
+    notifempty
+    sharedscripts
+    postrotate
+        /bin/kill -SIGUSR1 `cat /var/lib/mongodb/mongod.lock` && \
+        rm -f /var/log/mongodb/mongodb.log.????-??-??T??-??-??
+    endscript
+}
+

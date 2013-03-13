@@ -1,0 +1,11 @@
+2013-03-13 - 2.0.0 
+* Total module rewrite using stdlib and local yum repo for install
+
+2012-12-17 - 1.1.1
+* Patch for service name.  Parameter was incorrectly set.  bpholt provided fix.  
+
+
+2012-11-29 - 1.0.0
+* First release, only supports RHEL/CentOS/Fedora
+* Latest three versions of mongod from 10-gen repo allowed as version inputs
+* UNSET version (default) will install the latest version from 10-gen
